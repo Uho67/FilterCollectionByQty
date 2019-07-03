@@ -8,10 +8,10 @@
 
 namespace SysPerson\Practic\Observer;
 
-use Magento\Framework\Event\ObserverInterface;
+use SysPerson\Practic\Api\MyObserverInterface;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Magento\Catalog\Model\Layer\Resolver;
-class MyObserver extends AbstractCollection implements ObserverInterface
+class MyObserver extends AbstractCollection implements MyObserverInterface
 {
 
     protected $_registry;
